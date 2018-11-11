@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gerenciamento Estacionamento</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <main>
+        <div class="inputDados">
+            <div class="inputPlaca">
+                <label for="placaCarro">Placa do Carro</label>
+                <input type="text" name="placaCarro" id="placaCarro">
+            </div>
+            <div class="inputCaracteristicas">
+                <div>
+                    <label for="modeloCarro">Modelo do Carro</label>
+                    <input type="text" name="modeloCarro" id="modeloCarro">
+                </div>
+                <div>
+                    <label for="corCarro">Cor do Carro</label>
+                    <input type="text" name="corCarro" id="corCarro">
+                </div>
+            </div>
+        </div>
+        <div class="btnMarcador">
+            <button type="submit" id="marcarEntrada">Marcar Entrada</button>
+            <button type="submit" id="marcarSaida">Marcada Saida</button>
+        </div>
+        <div id="listaCarros">
+            <table class="tabelaCarros">
+                <thead>
+                    <th>Placa</th>
+                    <th>Modelo</th>
+                    <th>Cor</th>
+                    <th>Entrada</th>
+                    <th>Saida</th>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </main>
+    
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/controller/services.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

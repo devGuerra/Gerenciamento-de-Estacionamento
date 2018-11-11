@@ -1,0 +1,65 @@
+body{ 
+    background-color: #666666;
+    height: 100vh;
+}
+nav{
+    height: 5%;
+    background-color: #fff;
+}
+.navMenu{
+    margin: 0;
+}
+main{
+    height: 90%;
+}
+.inputDados{
+    text-align: center;
+    margin-top: 2em;
+}
+.inputDados div{
+    display: inline-block;
+}
+.inputDados label{
+    display: block;
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 1.2em;
+}
+
+.inputDados input{
+    width: 8em;
+    text-align: center;
+    font-size: 26px;
+    text-transform: uppercase;
+    border: 1px solid #000
+}
+.btnMarcador{
+    text-align: center;
+}
+.btnMarcador button{
+    width: 8em;
+    height: 2em;
+    color: #fff;
+    background-color: #a0ce4e;
+    font-family: sans-serif;
+    border: none;
+    border-radius: 5px;
+    margin: 1em 1em;
+}
+#listaCarros{
+    background-color: #fff;
+    height: 400px;
+    text-align: center;
+}
+.tabelaCarros{
+    width: 100%;
+    padding: 0 18em
+}
+.tabelaCarros thead{
+    text-align: center;
+}
+.tabelaCarros td{ 
+    width: 4em; 
+    text-transform: uppercase;
+}
+
