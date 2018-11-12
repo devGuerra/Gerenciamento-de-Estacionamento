@@ -34,6 +34,15 @@ function criaTabela(){
     }
 }
 
-function tempoPermanencia(entrada, saida){
-    return saida - entrada
+function validaPlaca(placa){
+    let reg = new RegExp('^[A-Z]{3}[-][0-9]{4}$')
+
+    if(reg.test(placa)){
+        carros.push({ placa, modelo, cor, entrada })
+        criaTabela()
+        saveStorage()
+        clear()
+    }else{
+        alert('Placa Inválida')
+    }
 }

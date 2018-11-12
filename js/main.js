@@ -7,12 +7,7 @@ $('#marcarEntrada').click( function(){
     modelo = $('#modeloCarro').val()
     cor = $('#corCarro').val()
     entrada = horario()
-    
-    carros.push({ placa, modelo, cor, entrada })
-    
-    criaTabela()
-    saveStorage()
-    clear()
+    validaPlaca(placa)
 })
 
 $('#listaCarros tbody').on('click', 'tr', (function(){
@@ -30,11 +25,11 @@ $('#marcarSaida').click(function(){
     for( i = 0; i < carros.length; i++){
         if(placaInput == carros[i].placa){
             carros[i].saida = horario()
-            console.log(carros[i].entrada.charAt(10, 16) )
+            let entradaInt = carros[i].entrada.substring(10,16)
         }
     }
     criaTabela()
-    saveStorage()
+
     clear()
 })
 
