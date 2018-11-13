@@ -35,7 +35,7 @@ function criaTabela(){
 }
 
 function validaPlaca(placa){
-    // let reg = new RegExp(/^([a-zA-Z]{3}[-]{0,1}[0-9]{4})$/gimu)
+    let reg = new RegExp(/^([a-zA-Z]{3}[-]{0,1}[0-9]{4})$/gimu)
 
     if(reg.test(placa)){
         carros.push({ placa, modelo, cor, entrada })
