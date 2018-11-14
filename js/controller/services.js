@@ -29,6 +29,10 @@ function criaTabela(){
         $('#listaCarros tr:last').append('<td></td>')
         $('#listaCarros td:last').text(carro.saida || '-')
         $('#listaCarros tr:last').append('<td></td>')
+        $('#listaCarros td:last').text(carro.permanencia || '-')
+        $('#listaCarros tr:last').append('<td></td>')
+        $('#listaCarros td:last').text(carro.valor || '-')
+        $('#listaCarros tr:last').append('<td></td>')
         $('#listaCarros td:last').append('<button type="submit" id="btn-delete"></button>')
         $('#listaCarros button:last').text('Apagar')
     }
